@@ -11,6 +11,12 @@
 .article-date
   @extend $block-caption
   float: left
+  a&:hover
+    color: color-link
+  &:before
+    font-family: font-icon
+    color: #ccc
+    content: "\f017"
 
 .article-category
   float: left
@@ -19,14 +25,18 @@
   text-shadow: 0 1px #fff
   margin-left: 8px
   &:before
-    content: "\2022"
+    font-family: font-icon
+    content: "\f07c"
 
 .article-category-link
   @extend $block-caption
-  margin: 0 12px 1em
+  margin: 0 8px 1em
+  a&:hover
+    color: color-link
 
 .article-header
-  padding: article-padding article-padding 0
+  padding: article-padding
+  border-left: 5px solid color-theme
 
 .article-title
   text-decoration: none
@@ -37,6 +47,7 @@
   transition: color 0.2s
   a&:hover
     color: color-link
+    margin-left: 8px !important
 
 .article-entry
   @extend $base-style
@@ -147,15 +158,16 @@
     color: color-grey
     text-decoration: none
     &:hover
-      color: color-default
+      color: color-link
 
 .article-tag-list-item
   float: left
   margin-right: 10px
-
-.article-tag-list-link
   &:before
-    content: "#"
+    font-family: font-icon
+    content: "\f02b"
+    margin-right: 4px
+    color: #ccc
 
 .article-comment-link
   float: right
@@ -269,6 +281,22 @@ $article-share-link
     text-align: center
   &:hover
     color: #fff
+
+.article-share-weibo
+  @extend $article-share-link
+  &:before
+    content: "\f18a"
+  &:hover
+    background: color-weibo
+    text-shadow: 0 1px darken(color-weibo, 20%)
+
+.article-share-renren
+  @extend $article-share-link
+  &:before
+    content: "\f18b"
+  &:hover
+    background: color-renren
+    text-shadow: 0 1px darken(color-renren, 20%)
 
 .article-share-twitter
   @extend $article-share-link

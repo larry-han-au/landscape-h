@@ -1,27 +1,27 @@
-# Landscape
+# Landscape-F
 
-A brand new default theme for [Hexo].
+A theme based on [Hexo]'s default theme [Landscape].
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](http://howiefh.github.io/hexo-theme-landscape-f/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/tommy351/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/howiefh/hexo-theme-landscape-f.git themes/landscape-f
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Landscape-F requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `landscape-f`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/landscape-f
 git pull
 ```
 
@@ -33,6 +33,7 @@ menu:
   Home: /
   Archives: /archives
 rss: /atom.xml
+github: https://github.com/howiefh
 
 # Content
 excerpt_link: Read More
@@ -41,21 +42,55 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- about_me
 - category
 - tag
 - tagcloud
-- archives
+- archive
+- calendar
 - recent_posts
+- duoshuo_recent_comments
+- links
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon: /favicon.ico
 twitter:
 google_plus:
+fb_admins:
+fb_app_id:
+
+# Toc
+toc:
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
+
+# Scroll to top
+go_top: true
+
+# duoshuo
+duoshuo_shortname: 
+
+# baidu share
+baidushare: true
+
+# blogroll
+links:
+- name: 404 page
+  link: http://yibo.iyiyun.com/js/yibo404/key/1
+
+# about me
+about_me:
+  title: ABOUT ME
+  gravatar: a@abc.com
+  avatar: /images/github.jpg
+  texts:
+  - Hi,I'm howiefh.
 ```
 
 - **menu** - Navigation menu
 - **rss** - RSS link
+- **github** - Github link
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox]
 - **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
@@ -64,12 +99,18 @@ google_plus:
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
+- **toc** - Show toc in article or sidebar
+- **go_top** - Go to top
+- **duoshuo_shortname** - Duoshuo shortname
+- **baidushare** - Show baidu share in post
+- **links** - Links displaying in sidebar
+- **about_me** - About me displaying in sidebar. The gravatar is your gravatar e-mail. You can choose gravatar or avatar to show your picture. 
 
 ## Features
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Landscape-F uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)
@@ -81,13 +122,17 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 
 You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
 
-Landscape provides 5 built-in widgets:
+Landscape-F provides 9 built-in widgets:
 
 - category
 - tag
 - tagcloud
-- archives
+- archive
 - recent_posts
+- about_me
+- calendar
+- duoshuo_recent_comments
+- links
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
@@ -109,3 +154,4 @@ All of them are enabled by default. You can edit them in `widget` setting.
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
 [Grunt]: http://gruntjs.com/
+[Landscape]: https://github.com/hexojs/hexo-theme-landscape

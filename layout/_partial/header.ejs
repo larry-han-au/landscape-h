@@ -19,8 +19,11 @@
         <% } %>
       </nav>
       <nav id="sub-nav">
+        <% if (theme.github){ %>
+          <a id="nav-github-link" class="nav-icon" href="<%- theme.github %>" title="Github" target="_blank"></a>
+        <% } %>
         <% if (theme.rss){ %>
-          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed" target="_blank"></a>
         <% } %>
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>

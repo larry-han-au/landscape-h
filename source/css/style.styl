@@ -26,7 +26,7 @@ html, body, #container
   height: 100%
 
 body
-  background: color-background
+  background: url(bg-url) color-background
   font: font-size font-sans
 
 .outer
@@ -61,7 +61,7 @@ body
   left: 0
   transition: 0.2s ease-out
   z-index: 1
-  background: color-background
+  background: url(bg-url) color-background
   .mobile-nav-on &
     left: mobile-nav-width
 
@@ -82,6 +82,10 @@ if sidebar is left
 @import "_partial/footer"
 @import "_partial/highlight"
 @import "_partial/mobile"
+@import "_partial/bottom-btn"
+@import "_partial/toc"
+@import "_partial/calendar"
+@import "_partial/about-me"
 
 if sidebar
   @import "_partial/sidebar"

@@ -1,0 +1,109 @@
+//toc
+.toc-article
+  background color-background
+  margin 1.6em 0 0 2em
+  -webkit-border-radius 4px
+  border-radius 4px
+  border 1px solid #ddd
+  -webkit-box-shadow inset  4px  4px 8px -8px #696868, 
+                        inset  -4px -4px 8px -8px #696868
+  -moz-box-shadow inset  4px  4px 8px -8px #696868, 
+                        inset  -4px -4px 8px -8px #696868
+  box-shadow inset  4px  4px 8px -8px #696868, 
+                        inset  -4px -4px 8px -8px #696868
+  h2, ol
+    padding 0.3em
+    margin 0
+  ul li
+    list-style disc
+    text-align match-parent
+    margin 0.5em 0
+  ol li
+    list-style-type decimal
+    margin 0.5em 0
+  @media mq-mobile
+    margin 1.6em 0
+    width 100%
+  @media mq-tablet
+    margin 1.6em 0
+    width 100%
+#toc
+  line-height 1.3em
+  font-size 0.8em
+  float right
+  .toc
+    li
+      list-style-type none
+      a
+        &:hover
+          color color-font
+          text-decoration none !important
+  .toc-child 
+    padding-left 1.5em
+#toc.toc-aside
+  display none
+  width 13%
+  position fixed
+  right 2%
+  top 360px
+  overflow hidden
+  line-height 1.5em
+  font-size 1em
+  color color-heading
+  opacity .6
+  transition opacity 1s ease-out
+  @media mq-mobile
+    width 60%
+    height 40%
+    right 58px 
+    padding 0 20px
+    background #fff
+    overflow auto
+  @media mq-tablet
+    width 60%
+    height 40%
+    right 58px 
+    padding 0 20px
+    background #fff
+    overflow auto
+  strong
+    padding 0.3em 0
+    color color-font
+  &:hover
+    transition opacity .3s ease-out
+    opacity 1
+  a
+    transition color 1s ease-out
+    text-decoration none
+    color color-link
+    &:hover
+      color color-theme
+      transition color .3s ease-out
+
+/*! css3 animate */
+.animated
+  animation-fill-mode both
+  animation-duration 1s
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+.fadeIn
+  animation-name fadeIn
+
+@keyframes fadeInDown
+  0%
+    opacity 0
+    transform translateY(-20px)
+  100% 
+    opacity 1
+    transform translateY(0)
+
+.fadeOut
+  animation-name fadeOut
+
+.moveMain
+  margin-left 10% !important
