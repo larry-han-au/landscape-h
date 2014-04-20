@@ -55,3 +55,6 @@ about_me:
   avatar: /images/github.jpg
   texts:
   - Hi,I'm howiefh.
+
+# display updated
+display_updated: true

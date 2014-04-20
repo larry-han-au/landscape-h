@@ -86,6 +86,9 @@ about_me:
   avatar: /images/github.jpg
   texts:
   - Hi,I'm howiefh.
+
+# display updated
+display_updated: true
 ```
 
 - **menu** - Navigation menu
@@ -105,6 +108,7 @@ about_me:
 - **baidushare** - Show baidu share in post
 - **links** - Links displaying in sidebar
 - **about_me** - About me displaying in sidebar. The gravatar is your gravatar e-mail. You can choose gravatar or avatar to show your picture. 
+- **display_updated** - Display updated in article footer
 
 ## Features
 
