@@ -40,6 +40,10 @@
   var m = $('#main'),
       s = $('#sidebar'),
 	  t = $('.toc-aside'),
+	  a = $('.toc-article h2'),
+	  tl = $('.toc-article li'),
+	  to = $('.toc-article ol'),
+	  ta = $('.toc-article'),
       i = $('.icon-toc-toggle');
 		
   // $(window).resize(function(){
@@ -56,6 +60,22 @@
 	  */
     } else {
 		t.css('display', 'none');
+	}
+  });
+  //点击显示文章目录
+  a.click(function(){
+	// document.getElementById('toc-child').style.display=(document.getElementById('toc-child').style.display =='none')?'':'none';
+	
+	if (to.css('display') == 'none') {
+		if (tl.length>10) {
+			ta.css('margin', '1.6em 0').css('width', '100%');
+		}
+		to.css('display', 'block');
+	} else {
+		if (tl.length>10) {
+			ta.css('width', 'auto').css('margin', '1.6em 0 1.6em 2em');
+		}
+		to.css('display', 'none');
 	}
   });
   i.click(function(){
@@ -87,9 +107,16 @@ $(document).ready(function(){
   var t  = $('#toc'),
 	  i  = $('.icon-toc-toggle'),
       ah = $('#toc li');
+      tl = $('.toc-article li')
+      to = $('.toc-article ol')
   if(ah.length==0){
     t.css('display','none');
     i.css('display','none');
+  }
+
+//文章中的文章目录太长，隐藏
+  if (tl.length > 10) {
+	  to.css('display', 'none')
   }
 
 });

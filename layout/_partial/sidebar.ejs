@@ -1,6 +1,6 @@
 <% if (is_post()&& (page.toc !== false) && theme.toc.aside){ %>
   <div id="toc" class="toc-aside">
-  <strong class="toc-title"><%= __('contents') %></strong>
+  <h2 class="toc-title"><%= __('contents') %></h2>
   <%- toc(page.content) %>
   </div>
 <% } %>
