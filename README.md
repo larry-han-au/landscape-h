@@ -3,6 +3,7 @@
 A theme based on [Hexo]'s default theme [Landscape].
 
 - [Preview](http://howiefh.github.io/hexo-theme-landscape-f/)
+- [My Blog](http://howiefh.github.io/2014/04/20/hexo-optimize-and-my-theme-landscape-f/)
 
 ## Installation
 
