@@ -44,7 +44,7 @@
       <% } %>
 
       <% if (post.comments && theme.duoshuo_shortname){ %>
-        <a href="<%- post.permalink %>#ds_thread" class="ds-thread-count article-comment-link" data-thread-key="<%- config.root %><%- post.path%>">暂无评论</a>
+        <a href="<%- post.permalink %>#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="<%- config.root %><%- post.path%>">暂无评论</a>
       <% } %>
 	  <% } %>
       <%- partial('post/tag') %>

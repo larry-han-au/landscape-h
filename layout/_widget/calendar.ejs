@@ -44,7 +44,7 @@ LGY_calendar.prototype = {
         //如果刚好是星期天，则空出一行（显示上个月的天数）
             first_day = first_day == 0?first_day=7:first_day;
         //本月份最后一天是几号
-            final_date = new Date(year,month+1,0).getDate(),
+        var final_date = new Date(year,month+1,0).getDate(),
         //上个月的最后一天是几号
             last_date = new Date(year,month,0).getDate(),
         //剩余的格子数--即排在末尾的格子数
@@ -68,7 +68,8 @@ LGY_calendar.prototype = {
             html+='<span class="g-calendar-grey">'+(last_date-(first_day-1)+i)+'</span>';
         }
         //本月的显示天数
-		if (year == this.c_year && month == this.c_month) {
+        var postdate = new Date("<%= page.date %>"); 
+		if (postdate.getFullYear() == year && postdate.getMonth() == month) { 
 			html += '<%- current_month_calendar() %>';
 		} else {
 			for(var j=0;j<final_date;j++){        

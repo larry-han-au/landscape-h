@@ -1,7 +1,9 @@
 //toc
-.toc-article
+#toc.toc-article
   background color-background
   margin 1.6em 0 1.6em 2em
+  line-height 1.5em
+  font-size 0.9em
   -webkit-border-radius 4px
   border-radius 4px
   h2, ol
@@ -9,13 +11,6 @@
     margin 0
   h2
     cursor pointer
-  ul li
-    list-style disc
-    text-align match-parent
-    margin 0.5em 0
-  ol li
-    list-style-type decimal
-    margin 0.5em 0
   @media mq-mobile
     margin 1.6em 0
     width 100%
@@ -25,8 +20,6 @@
 #toc
   line-height 1.3em
   font-size 0.8em
-  max-height: 68%
-  overflow: auto
   float right
   .toc
     li
@@ -44,6 +37,8 @@
   right 2%
   top 360px
   line-height 1.5em
+  max-height: 68%
+  overflow: auto
   font-size 1em
   color color-heading
   opacity .6
@@ -62,7 +57,7 @@
     padding 0 20px
     background #fff
     overflow auto
-  strong
+  h2
     padding 0.3em 0
     color color-font
   &:hover
