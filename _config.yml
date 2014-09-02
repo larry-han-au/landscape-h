@@ -6,7 +6,7 @@ rss: /atom.xml
 github: https://github.com/howiefh
 
 # Content
-excerpt_link: Read More
+excerpt_link: "Read More"
 fancybox: true
 
 # Sidebar
@@ -14,16 +14,14 @@ sidebar: right
 widgets:
 - about_me
 - category
-- tag
 - tagcloud
 - archive
 - calendar
 - recent_posts
 - duoshuo_recent_comments
-- links
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-40492061-1 
 favicon: /favicon.ico
 twitter:
 google_plus:
@@ -38,23 +36,25 @@ toc:
 go_top: true
 
 # duoshuo
-duoshuo_shortname:
+duoshuo_shortname: howiefh
 
 # baidu share
 baidushare: true
 
 # blogroll
 links:
-- name: 404 page
+- name: "404 page"
   link: http://yibo.iyiyun.com/js/yibo404/key/1
 
 # about me
 about_me:
-  title: ABOUT ME
-  gravatar: a@abc.com
-  avatar: /images/github.jpg
+  title: "ABOUT ME"
+  gravatar: howiefh@gmail.com
+  avatar: http://fh-1.qiniudn.com/okal-eltocat.jpg
   texts:
-  - Hi,I'm howiefh.
+  - Hi,I'm FengHao.
+  - I'll share something interesting and my learning experience with you at this blog.
+  - 前博客:<a href="http://hi.baidu.com/idea_star" target="_BLANK">百度空间</a>
 
 # display updated
 display_updated: true
