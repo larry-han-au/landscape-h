@@ -2,8 +2,12 @@
   <h3 class="widget-title"><%= __('calendar') %></h3>
   <div class="widget">
     <div id="g-calendar" class="g-calendar">
-        <span class="g-calendar-prev">&lt;</span>
-        <span class="g-calendar-next">&gt;</span>
+        <span class="g-calendar-prev"></span>
+		<% if (is_post()) { %> 
+        <span class="g-calendar-back"></span>
+        <span class="g-calendar-now"></span>
+		<% } %> 
+        <span class="g-calendar-next"></span>
         <div class="g-calendar-hd"></div>
         <div class="g-calendar-tit"></div>
         <div class="g-calendar-bd"></div>
@@ -18,6 +22,8 @@ function LGY_calendar(wrapId, options){
     this.oTit = this.getByClassName('g-calendar-tit',this.oWrap)[0];
     this.oPrev = this.getByClassName('g-calendar-prev',this.oWrap)[0];
     this.oNext = this.getByClassName('g-calendar-next',this.oWrap)[0];
+    this.oNow = this.getByClassName('g-calendar-now',this.oWrap)[0];
+    this.oBack = this.getByClassName('g-calendar-back',this.oWrap)[0];
     this.init();
 }
 LGY_calendar.prototype = {
@@ -69,7 +75,7 @@ LGY_calendar.prototype = {
         }
         //本月的显示天数
         var postdate = new Date("<%= page.date %>"); 
-		if (postdate.getFullYear() == year && postdate.getMonth() == month) { 
+		if (<%- is_post() %> && postdate.getFullYear() == year && postdate.getMonth() == month) { 
 			html += '<%- current_month_calendar() %>';
 		} else {
 			for(var j=0;j<final_date;j++){        
@@ -112,6 +118,30 @@ LGY_calendar.prototype = {
         }
         
     },
+    // back 切换
+    back:function(){
+        var _that = this;
+        this.oBack.onclick = function(){
+            var postdate = new Date("<%= page.date %>"); 
+            _that.year = postdate.getFullYear();
+            _that.month = postdate.getMonth();
+            // 填充日历
+            _that.fillDate(_that.year,_that.month);
+        }
+        
+    },
+    // now切换
+    now:function(){
+        var _that = this;
+        this.oNow.onclick = function(){
+            var nowDate = new Date(); 
+            _that.year = nowDate.getFullYear();
+            _that.month = nowDate.getMonth();
+            // 填充日历
+            _that.fillDate(_that.year,_that.month);
+        }
+        
+    },
     // prev切换
     prev:function(){
         var _that = this;
@@ -139,6 +169,10 @@ LGY_calendar.prototype = {
         this.next();
         //prev切换
         this.prev();
+        //back 切换
+        this.back();
+        //now 切换
+        this.now();
     }
 }
 new LGY_calendar('g-calendar');
