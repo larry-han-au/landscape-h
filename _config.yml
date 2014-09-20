@@ -6,7 +6,7 @@ rss: /atom.xml
 github: https://github.com/howiefh
 
 # Content
-excerpt_link: "Read More"
+excerpt_link: Read More
 fancybox: true
 
 # Sidebar
@@ -43,12 +43,12 @@ baidushare: true
 
 # blogroll
 links:
-- name: "404 page"
+- name: 404 page
   link: http://yibo.iyiyun.com/js/yibo404/key/1
 
 # about me
 about_me:
-  title: "ABOUT ME"
+  title: ABOUT ME
   gravatar: howiefh@gmail.com
   avatar: http://fh-1.qiniudn.com/okal-eltocat.jpg
   texts:
