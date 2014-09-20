@@ -14,14 +14,16 @@ sidebar: right
 widgets:
 - about_me
 - category
+- tag
 - tagcloud
 - archive
 - calendar
 - recent_posts
 - duoshuo_recent_comments
+- links
 
 # Miscellaneous
-google_analytics: UA-40492061-1 
+google_analytics:
 favicon: /favicon.ico
 twitter:
 google_plus:
@@ -36,7 +38,7 @@ toc:
 go_top: true
 
 # duoshuo
-duoshuo_shortname: howiefh
+duoshuo_shortname:
 
 # baidu share
 baidushare: true
@@ -49,12 +51,10 @@ links:
 # about me
 about_me:
   title: ABOUT ME
-  gravatar: howiefh@gmail.com
-  avatar: http://fh-1.qiniudn.com/okal-eltocat.jpg
+  gravatar: a@abc.com
+  avatar: /images/github.jpg
   texts:
-  - Hi,I'm FengHao.
-  - I'll share something interesting and my learning experience with you at this blog.
-  - 前博客:<a href="http://hi.baidu.com/idea_star" target="_BLANK">百度空间</a>
+  - Hi,I'm howiefh.
 
 # display updated
 display_updated: true
