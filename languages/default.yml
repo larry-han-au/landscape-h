@@ -6,6 +6,7 @@ prev: Prev
 next: Next
 comment: Comments
 contents: Contents
+archive: Archives
 archive_a: Archives
 archive_b: "Archives: %s"
 page: "Page %d"
