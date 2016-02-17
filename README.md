@@ -1,9 +1,8 @@
-# Landscape-F
+# Landscape-H
 
-A theme based on [Hexo]'s default theme [Landscape].
+A theme based on [Hexo]'s default theme [Landscape] and [Landscape-f] (http://howiefh.github.io/hexo-theme-landscape-f/).
 
-- [Preview](http://howiefh.github.io/hexo-theme-landscape-f/)
-- [My Blog](http://howiefh.github.io/2014/04/20/hexo-optimize-and-my-theme-landscape-f/)
+- [My Blog](larryhan.me)
 
 ## Installation
 
@@ -13,11 +12,10 @@ A theme based on [Hexo]'s default theme [Landscape].
 $ git clone https://github.com/howiefh/hexo-theme-landscape-f.git themes/landscape-f
 ```
 
-**Landscape-F requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape-f`.
+Modify `theme` setting in `_config.yml` to `landscape-h`.
 
 ### Update
 
