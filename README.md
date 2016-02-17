@@ -1,17 +1,16 @@
 # Landscape-H
 
-A theme based on [Hexo]'s default theme [Landscape] and [Landscape-f] (http://howiefh.github.io/hexo-theme-landscape-f/).
+A theme based on [Hexo]'s default theme [Landscape] and [Landscape-f].
 
-- [My Blog](larryhan.me)
+- [My Blog](https://larryhan.me)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/howiefh/hexo-theme-landscape-f.git themes/landscape-f
+$ git clone https://github.com/howiefh/hexo-theme-landscape-f.git themes/landscape-h
 ```
-
 
 ### Enable
 
@@ -20,7 +19,7 @@ Modify `theme` setting in `_config.yml` to `landscape-h`.
 ### Update
 
 ``` bash
-cd themes/landscape-f
+cd themes/landscape-h
 git pull
 ```
 
