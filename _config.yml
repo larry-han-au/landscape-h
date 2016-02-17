@@ -2,8 +2,10 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 rss: /atom.xml
-github: https://github.com/howiefh
+github: https://github.com/hanliang512288
+linkedin: https://au.linkedin.com/in/larryhan41
 
 # Content
 excerpt_link: Read More
@@ -17,10 +19,10 @@ widgets:
 - tag
 - tagcloud
 - archive
-- calendar
+  ##- calendar
 - recent_posts
-- duoshuo_recent_comments
-- links
+  ##- duoshuo_recent_comments
+  ## - links
 
 # Miscellaneous
 google_analytics:
@@ -34,7 +36,7 @@ fb_app_id:
 # Toc
 toc:
   article: true   ## show contents in article.
-  aside: true     ## show contents in aside.
+  aside: false     ## show contents in aside.
 # Scroll to top
 go_top: true
 
@@ -53,9 +55,11 @@ links:
 about_me:
   title: ABOUT ME
   gravatar: a@abc.com
-  avatar: /images/github.jpg
+  avatar: /images/avatar.jpeg
   texts:
-  - Hi,I'm howiefh.
+  - My name is Larry
+  - Master of Information Technology
+  - University of Melbourne
 
 # display updated
 display_updated: true

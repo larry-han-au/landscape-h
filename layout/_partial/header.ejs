@@ -19,17 +19,20 @@
         <% } %>
       </nav>
       <nav id="sub-nav">
-        <% if (theme.github){ %>
+      <% if (theme.linkedin) {%>
+        <a id="nav-linkedin-link" class="nav-icon" href="<%- theme.linkedin %>" title="LinkedIn" target="_blank"></a>
+      <% } %>
+    <% if (theme.github){ %>
           <a id="nav-github-link" class="nav-icon" href="<%- theme.github %>" title="Github" target="_blank"></a>
         <% } %>
         <% if (theme.rss){ %>
           <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed" target="_blank"></a>
         <% } %>
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon st-search-show-outputs" title="Search"></a>
       </nav>
-      <div id="search-form-wrap">
+      <!--<div id="search-form-wrap">  
         <%- search_form({button: '&#xF002;'}) %>
-      </div>
+      </div> --!>
     </div>
   </div>
 </header>
