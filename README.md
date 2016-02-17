@@ -1,6 +1,6 @@
 # Landscape-H
 
-A theme based on [Hexo]'s default theme [Landscape] and [Landscape-f].
+A theme based on [Hexo]'s default theme [Landscape] and [Landscape-f] .
 
 - [My Blog](https://larryhan.me)
 
