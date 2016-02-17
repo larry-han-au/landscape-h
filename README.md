@@ -1,6 +1,6 @@
 # Landscape-H
 
-A theme based on [Hexo]'s default theme [Landscape] and [Landscape\-f].
+A theme based on [Hexo]'s default theme [Landscape] and [Landscape-f].
 
 - [My Blog](https://larryhan.me)
 
@@ -157,3 +157,4 @@ All of them are enabled by default. You can edit them in `widget` setting.
 [Font Awesome]: http://fontawesome.io/
 [Grunt]: http://gruntjs.com/
 [Landscape]: https://github.com/hexojs/hexo-theme-landscape
+[Landscape-f]: https://github.com/howiefh/hexo-theme-landscape-f
